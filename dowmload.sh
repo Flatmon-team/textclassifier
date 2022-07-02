@@ -1,0 +1,2 @@
+ssh yottami@23.111.202.126 'mongoexport --db db_parser --collection messages' | mongoimport --db db_parser --collection messages --upsert
+ssh yottami@23.111.202.126 'mongoexport --db db_parser --collection events' | mongoimport --db db_parser --collection events --upsert
